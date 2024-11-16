@@ -21,4 +21,5 @@ export async function POST({request}: RequestEvent)
             text: 'Something Went wrong!'
         })   
     }
+    return new Response("{}")
 }
