@@ -1,6 +1,6 @@
 import 'dotenv/config'
 // const url = ''
-const url = process.env.TG_WEBHOOK_URL + 'api/webhook'
+const url = process.env.TG_WEBHOOK_URL + '/api/webhook'
 const telegramUrl = 'https://api.telegram.org/bot' + process.env.TG_API_TOKEN + '/setWebhook?url=' + url
 //
 //
