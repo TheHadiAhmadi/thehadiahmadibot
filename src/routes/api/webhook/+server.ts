@@ -8,7 +8,8 @@ export async function POST({request}: RequestEvent)
     const body = await request.json()
     const chat_id = body.message?.chat.id
 
-    //
+    await db('user_messages').insert({type: 'event_from_user', body})
+
     try {
         await callApi("/sendMessage", {
             chat_id,
