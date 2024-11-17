@@ -13,7 +13,13 @@ export async function POST({request}: RequestEvent)
     try {
         await callApi("/sendMessage", {
             chat_id,
-            text: 'Hello!'
+            text: `1. Clockify
+2. Note taking
+3. AI integration
+4. postman alternative
+5. Github integration
+6. deploy projects
+7. Manage ssh servers`
         })
     } catch(err) {
         await callApi("/sendMessage", {
